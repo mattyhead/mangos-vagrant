@@ -1,0 +1,4 @@
+[ "$UID" -eq 0 ] || exec bash "$0" "$@"
+
+adduser mangos
+usermod -aG sudo mangos

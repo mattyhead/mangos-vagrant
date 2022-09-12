@@ -1,0 +1,17 @@
+#!/bin/bash
+sudo su mangos
+
+cd /home/mangos/sources
+
+git clone https://github.com/mangoszero/server.git . --recursive --depth=1
+
+cd /home/mangos/sources/dep
+git pull
+git checkout master
+
+cd /home/mangos/build
+cmake ../sources/ -DCMAKE_INSTALL_PREFIX=/opt/wow/install/mangos -DCONF_INSTALL_DIR=/opt/wow/install/mangos/conf
+
+make -j4 #make for 4 cores
+
+make install

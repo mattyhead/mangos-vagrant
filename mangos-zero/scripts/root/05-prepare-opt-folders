@@ -1,0 +1,7 @@
+[ "$UID" -eq 0 ] || exec bash "$0" "$@"
+
+cd /opt/
+mkdir wow
+chown -R mangos:root wow
+chmod g+s wow
+exit

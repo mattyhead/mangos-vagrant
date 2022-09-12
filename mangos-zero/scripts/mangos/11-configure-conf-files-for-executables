@@ -1,0 +1,7 @@
+#!/bin/bash
+sudo su mangos
+
+cd /opt/wow/install/mangos/conf/
+cp realmd.conf.dist realmd.conf && cp mangosd.conf.dist mangosd.conf
+
+vim mangosd.conf

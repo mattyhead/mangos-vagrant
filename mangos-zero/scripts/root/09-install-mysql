@@ -1,0 +1,6 @@
+[ "$UID" -eq 0 ] || exec bash "$0" "$@"
+
+apt install mysql-server
+
+mysql -e < echo "CREATE USER 'mangos'@'localhost' IDENTIFIED BY 'mangos';
+GRANT ALL PRIVILEGES ON *.* TO 'mangos'@'localhost' WITH GRANT OPTION;"

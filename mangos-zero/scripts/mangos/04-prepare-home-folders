@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo su mangos
+
+mkdir /home/mangos/sources
+mkdir /home/mangos/build
+mkdir /home/mangos/db

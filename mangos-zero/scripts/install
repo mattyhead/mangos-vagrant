@@ -1,0 +1,15 @@
+#!/bin/bash
+
+source $HOME/mangos-vagrant/scripts/root/01-update-system
+source $HOME/mangos-vagrant/scripts/root/02-add-mangos-user
+source $HOME/mangos-vagrant/scripts/root/03-install-software
+source $HOME/mangos-vagrant/scripts/mangos/04-prepare-home-folders
+source $HOME/mangos-vagrant/scripts/root/05-prepare-opt-folders
+source $HOME/mangos-vagrant/scripts/mangos/06-prepare-opt-folders
+#stub alert:
+source $HOME/mangos-vagrant/scripts/mangos/07-extract-game-data
+source $HOME/mangos-vagrant/scripts/mangos/08-get-game-source-and-compile
+source $HOME/mangos-vagrant/scripts/root/09-install-mysql
+source $HOME/mangos-vagrant/scripts/mangos/10-setup-database
+source $HOME/mangos-vagrant/scripts/mangos/11-configure-conf-files-for-executables
+source $HOME/mangos-vagrant/scripts/mangos/12-setup-restarter

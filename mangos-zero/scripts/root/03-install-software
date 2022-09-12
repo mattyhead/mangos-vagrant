@@ -1,0 +1,3 @@
+[ "$UID" -eq 0 ] || exec bash "$0" "$@"
+
+apt install git make cmake libssl-dev libbz2-dev build-essential default-libmysqlclient-dev libace-6.4.5 libace-dev python screen gdb

@@ -1,0 +1,10 @@
+#!/bin/bash
+sudo su mangos
+
+cd /home/mangos/db/
+git clone https://github.com/mangoszero/database.git . --recursive --depth=1
+./InstallDatabases.sh
+
+echo "checking db"
+
+mysql -u mangos -pmangos mangos_world0 < echo "SELECT * FROM db_version ORDER BY VERSION DESC, structure DESC, content DESC LIMIT 0,1;"

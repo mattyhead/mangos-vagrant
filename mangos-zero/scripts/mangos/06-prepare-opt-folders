@@ -1,0 +1,6 @@
+#!/bin/bash
+sudo su mangos
+
+cd /opt
+mkdir wow/install && mkdir wow/install/mangos && mkdir wow/install/mangos/bin && mkdir wow/install/mangos/bin/logs && mkdir wow/install/mangos/conf 
+cd /opt/wow && mkdir gamedata && mkdir gamedata/1.12 && mkdir gamedata/1.12/mangos
