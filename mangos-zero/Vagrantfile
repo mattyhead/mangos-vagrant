@@ -12,8 +12,8 @@ Vagrant.configure("2") do |config|
   
     # Every Vagrant development environment requires a box. You can search for
     # boxes at https://vagrantcloud.com/search.
-    config.vm.box = "ubuntu/bionic64"
-  #  config.vm.box = "ubuntu/focal64"
+    #config.vm.box = "ubuntu/bionic64"
+    config.vm.box = "ubuntu/focal64"
   
     config.vbguest.auto_update = true
   
@@ -71,8 +71,6 @@ Vagrant.configure("2") do |config|
     # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
     # documentation for more information about their specific syntax and use.
     config.vm.provision "shell", inline: <<-SHELL
-
-echo "install has steps that require input:  vagrant ssh in and run ~/scripts/install"
 
 SHELL
   
